@@ -1,4 +1,4 @@
-# Heritability of energy budgeting in European seabass
+# Heritability of DEB Parameters in European seabass
 # Moro-Martínez, I., Campos-Candela, A., Bekaert, M., Sanchez, JB., Catanese, G., Tomàs-Ferrer, J. & Palmer. M
 
 This folder contains the R script to estimate the heritability and genetic correlation of two Dynamic Energy Budget (DEB) parameters — the assimilation rate \(∀\) and the volume-specific maintenance rate \( v \) — in European seabass (*Dicentrarchus labrax*) using a Bayesian animal model. The model is fitted with `brms` on a dataset of 343 individuals.
