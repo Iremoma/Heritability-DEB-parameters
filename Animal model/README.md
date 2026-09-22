@@ -9,7 +9,7 @@ This folder contains the R script to estimate the heritability and genetic corre
 
 | File | Description |
 |------|-------------|
-| `Animal_model.R` | Main R script. Loads data, scales traits, defines the bivariate animal model with `brms`, and saves the fitted model. |
+| `animal_model.R` | Main R script. Loads data, scales traits, defines the bivariate animal model with `brms`, and saves the fitted model. |
 | `input.Rdata` | Processed dataset containing the genetic relationship matrix (`GRM`) and the phenotypic data frame (`Y_frame`) with posterior means and standard deviations for \(∀\) and \( v \) at the fish level. |
 | `results.rds` | (Generated) Fitted `brms` model object. |
 | `Figure2.pdf` | (Generated) Three-panel figure with histograms of \(∀\) and \( v \), and their phenotypic correlation. |
