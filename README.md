@@ -31,7 +31,7 @@ We provide the R scripts necessary to reproduce the heritability and genetic cor
 
 All the code is organized in the following folder:
 
-### [Animal model]()
+### [Animal model](https://github.com/Iremoma/Heritability-DEB-parameters/tree/main/Animal%20model)
 
 This folder contains the code used to estimate the additive genetic variance and covariance of the two DEB parameters.
 
