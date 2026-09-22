@@ -10,9 +10,9 @@ This folder contains the R script to estimate the heritability and genetic corre
 | File | Description |
 |------|-------------|
 | `Animal_model.R` | Main R script. Loads data, scales traits, defines the bivariate animal model with `brms`, and saves the fitted model. |
-| `input.Rdata` | Processed dataset containing the genetic relationship matrix (`GRM`) and the phenotypic data frame (`Y_frame`) with posterior means and standard deviations for f⋅p Am and \( v \) at the fish level. |
+| `input.Rdata` | Processed dataset containing the genetic relationship matrix (`GRM`) and the phenotypic data frame (`Y_frame`) with posterior means and standard deviations for \(∀\) and \( v \) at the fish level. |
 | `results.rds` | (Generated) Fitted `brms` model object. |
-| `Figure2.pdf` | (Generated) Three-panel figure with histograms of f⋅p Am and \( v \), and their phenotypic correlation. |
+| `Figure2.pdf` | (Generated) Three-panel figure with histograms of \(∀\) and \( v \), and their phenotypic correlation. |
 
 ---
 
@@ -33,13 +33,13 @@ This folder contains the R script to estimate the heritability and genetic corre
 2. **Load data and libraries**  
    Load `input.Rdata` which contains:
    - `GRM`: genetic similarity matrix
-   - `Y_frame`: mean and SD of posteriors for \( f \cdot p_{Am} \) and \( v \) at the fish level
+   - `Y_frame`: mean and SD of posteriors for \(∀\) and \( v \) at the fish level
 
 3. **Visualise raw data**  
    The script produces Figure 2:
    - Histogram of \( f \cdot p_{Am} \)
    - Histogram of \( v \)
-   - Scatterplot of \( v \) vs. \( f \cdot p_{Am} \) with a linear fit
+   - Scatterplot of \( v \) vs. \(∀\) with a linear fit
 
 4. **Scale traits**  
    Both traits are standardised (mean = 0, SD = 1) because the non-scaled version does not converge. The corresponding standard errors (`pAmsd`, `vsd`) are scaled by the same factor.
@@ -60,7 +60,7 @@ This folder contains the R script to estimate the heritability and genetic corre
 ## Key model features
 
 - **Bivariate animal model**  
-  Two DEB parameters (\( f \cdot p_{Am} \) and \( v \)) are modelled simultaneously, allowing estimation of both heritabilities and genetic correlation.
+  Two DEB parameters (\(∀\) and \( v \)) are modelled simultaneously, allowing estimation of both heritabilities and genetic correlation.
 
 - **Genetic relationship matrix**  
   The `GRM` is passed to `brms` via `data2 = list(A = GRM)` and used as the covariance structure for the individual random effect `(1 | p | gr(ID, cov = A))`.
