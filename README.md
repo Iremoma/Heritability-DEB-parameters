@@ -1,10 +1,10 @@
 # Heritability and genetic correlations of physiological processes inferred from bioenergetic model parameters
 
-This repository contains all the code related to our work entitled **Heritability and genetic correlations of physiological processes inferred from bioenergetic model parameters**, by Irene Moro-Martinez, Andrea Campos-Candela, Michaël Bekaert Juan Sanchez, Gaetano Catanese, Joaquim Tomas-Ferrer and Miquel Palmer.
+This repository contains all the code related to our work entitled **Heritability and genetic correlations of physiological processes inferred from bioenergetic model parameters**, by Irene Moro-Martinez, Andrea Campos-Candela, Michaël Bekaert Juan Sanchez, Gaetano Catanese, Joaquim Tomàs-Ferrer and Miquel Palmer.
 
 The work presented here investigates whether key physiological processes involved in energy acquisition and energy mobilization exhibit additive genetic variation. We use a mechanistic Dynamic Energy Budget (DEB) [More about DEB theory [here](https://debportal.debtheory.org/docs/)] framework to derive individual-level parameters describing these processes and subsequently quantify their heritability and genetic correlation using genomic information.
 
-In particular, we estimate two individual-level DEB parameters in European seabass (Dicentrarchus labrax): a compound parameter describing energy acquisition, combining the scaled functional response and the surface-specific maximum assimilation rate, and the energy conductance (v), which governs the mobilization of energy reserves. These parameters are interpreted as latent traits summarizing biologically meaningful physiological processes.
+In particular, we estimate two individual-level DEB parameters in European seabass (*Dicentrarchus labrax*): a compound parameter describing energy acquisition, combining the scaled functional response and the surface-specific maximum assimilation rate, and the energy conductance (v), which governs the mobilization of energy reserves. These parameters are interpreted as latent traits summarizing biologically meaningful physiological processes.
 
 The DEB parameters were estimated using a hierarchical Bayesian model implemented in STAN [More about STAN [here](https://mc-stan.org/)], based on repeated measurements of total length, wet weight and muscle fat content. Subsequently, genomic relatedness was quantified using approximately 28,800 SNP markers, and a Bayesian bivariate animal model was used to estimate heritability and genetic and residual correlations between the two DEB parameters.
 
