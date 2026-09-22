@@ -41,11 +41,11 @@ The Bayesian bivariate animal model was used to partition phenotypic variation i
 
 We provide:
 
--The input data file `input.RData` which the pre‑processed dataset used for the analysis.
--The Bayesian bivariate animal model implemented in brms.
--Prior specification and sensitivity analyses.
--Convergence diagnostics;
--Script for calculating heritability and genetic and residual correlations 'Animal_model.R'.
+- The input data file `input.RData` which the pre‑processed dataset used for the analysis.
+- The Bayesian bivariate animal model implemented in brms.
+- Prior specification and sensitivity analyses.
+- Convergence diagnostics.
+- Script for calculating heritability and genetic and residual correlations 'animal_model'.
 
 The animal model accounts for uncertainty in the individual-level DEB parameter estimates through their posterior standard deviations.
 
