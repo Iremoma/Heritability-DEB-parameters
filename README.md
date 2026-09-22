@@ -45,7 +45,7 @@ We provide:
 - The Bayesian bivariate animal model implemented in brms.
 - Prior specification and sensitivity analyses.
 - Convergence diagnostics.
-- Script for calculating heritability and genetic and residual correlations 'animal_model'.
+- Script for calculating heritability and genetic and residual correlations 'animal_model.R'.
 
 The animal model accounts for uncertainty in the individual-level DEB parameter estimates through their posterior standard deviations.
 
